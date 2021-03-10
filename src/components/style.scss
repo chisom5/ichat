@@ -1,0 +1,509 @@
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .header {
+    height: 60px;
+    background: $tertiaryLight;
+    box-sizing: border-box;
+
+    .header__inner {
+      display: flex;
+      height: inherit;
+
+      #header__title {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 25px;
+        letter-spacing: 0.04em;
+        color: $neutralDark;
+        margin-left: 1rem;
+        margin-bottom: 0px;
+      }
+
+      #header__inner_first {
+        display: flex;
+        align-items: center;
+        width: 25%;
+        margin-left: 1rem;
+      }
+      .header__inner_second__container {
+        display: flex;
+        justify-content: space-between;
+        flex: 1;
+      }
+      #header__inner_second {
+        border-left: 1px solid $whiteColor;
+        width: 60%;
+        display: flex;
+        align-items: center;
+        padding-left: 1.2rem;
+      }
+      .header__inner_search {
+        width: 100%;
+        border-radius: 50px;
+
+        .ant-input {
+          padding: 0px 0.5rem;
+
+          &::placeholder {
+            font-size: 12px;
+          }
+        }
+      }
+
+      #header__inner_third_profile {
+        display: flex;
+        align-items: center;
+        margin-left: 2rem;
+      }
+
+      #header__inner_third {
+        display: flex;
+        align-items: center;
+        margin-right: 2rem;
+
+        .btn__add {
+          background: $primaryColor;
+          color: $whiteColor;
+          border-radius: 36px;
+          border: none;
+        }
+
+        #arrow_dropdown {
+          cursor: pointer;
+        }
+        #profile__holder {
+          width: 35px;
+          height: 35px;
+          border-radius: 50%;
+          // background: #483698;
+          background: rgba(72, 54, 152, 0.8);
+          display: flex;
+          justify-content: center;
+          margin-right: 0.6rem;
+
+          img {
+            max-width: 18px;
+          }
+        }
+      }
+    }
+  }
+  #icon__holder {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: $imageHolder;
+    display: flex;
+    justify-content: center;
+
+    img {
+      max-width: 1.2rem;
+    }
+  }
+
+  .sidebar__style {
+    width: 26.3%;
+    display: flex;
+    height: 100vh;
+    position: fixed;
+    background: $whiteColor;
+  }
+  .sidebar__style #mini__sidebar {
+    width: 80px;
+    background: $tertiaryLight;
+    height: inherit;
+    margin-top: 2px;
+
+    #mini__sidebar__section {
+      padding-top: 1rem;
+
+      .menu__holder {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2rem;
+        padding: 0.5rem;
+        cursor: pointer;
+
+        p {
+          color: $neutralDark;
+          opacity: 0.2;
+          font-size: 12px;
+          line-height: 16px;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .sidebar__style #max__sidebar {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 1.3rem 0.5rem;
+    border-right: 1px solid #e7e8e7;
+
+    .max__sidebar__header {
+      display: flex;
+      justify-content: space-between;
+
+      #max__sidebar__header__title {
+        color: $neutralDark;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 25px;
+        letter-spacing: 0.04em;
+      }
+      .btn__add {
+        border: 1px solid $primaryColor;
+        font-size: 12px;
+        color: $primaryColor;
+        border-radius: 50px;
+        padding: 0px 6px;
+        height: 24px;
+
+        .anticon+span{
+            margin-left: 4px;
+        }
+      }
+    }
+
+    .listChannels__container {
+      background: $whiteColor;
+      border-bottom: 1px solid #e7e8e7;
+      height: 84px;
+      padding: 22px 0px;
+      display: flex;
+      justify-content: space-between;
+      cursor: pointer;
+
+      #listChannels__info {
+        display: flex;
+        align-items: center;
+      }
+
+      .listChannels__info__text {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0.4rem;
+
+        .listChannels__info__title {
+          color: $neutralDark;
+          font-size: 12px;
+          font-weight: 500;
+        }
+
+        span {
+          color: $neutralLightBlack;
+          font-size: 11px;
+          line-height: 16px;
+        }
+      }
+      // right content
+      #listChannels__time span {
+        color: $neutralLightBlack;
+        font-size: 11px;
+        line-height: 16px;
+      }
+    }
+  }
+
+  .chatItem__me {
+    align-items: flex-end;
+  }
+  .chatItem__others {
+    align-items: flex-start;
+  }
+  .chatItem__container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.8rem;
+
+    .chatItem__inner {
+      display: flex;
+    }
+
+    .chatItem__card__container__me {
+      align-items: flex-end;
+    }
+    .chatItem__card__container__others {
+      align-items: flex-start;
+    }
+    .chatItem__card__container {
+      display: flex;
+      flex-direction: column;
+    }
+    .chatItem__card {
+      height: auto;
+      width: fit-content;
+      padding: 1.1rem;
+      margin-bottom: 0.4rem;
+      border-radius: 18px;
+    }
+
+    .chatItem__others {
+      background: rgba(37, 168, 224, 0.35);
+    }
+    .chatItem__me {
+      background: $chatForMe;
+    }
+    .me__first {
+      border-radius: 18px 0px 18px 18px !important;
+    }
+    .others__first {
+      border-radius: 0px 18px 18px 18px !important;
+    }
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .header {
+    height: 60px;
+    background: $tertiaryLight;
+    box-sizing: border-box;
+
+    .header__inner {
+      display: flex;
+      height: inherit;
+
+      #header__title {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 25px;
+        letter-spacing: 0.04em;
+        color: $neutralDark;
+        margin-left: 1rem;
+        margin-bottom: 0px;
+      }
+
+      #header__inner_first {
+        display: flex;
+        align-items: center;
+        width: 25%;
+        margin-left: 1rem;
+      }
+      .header__inner_second__container {
+        display: flex;
+        justify-content: space-between;
+        flex: 1;
+      }
+      #header__inner_second {
+        border-left: 1px solid $whiteColor;
+        width: 60%;
+        display: flex;
+        align-items: center;
+        padding-left: 1.2rem;
+      }
+      .header__inner_search {
+        width: 100%;
+        border-radius: 50px;
+
+        .ant-input {
+          padding: 0px 0.5rem;
+
+          &::placeholder {
+            font-size: 12px;
+          }
+        }
+      }
+
+      #header__inner_third_profile {
+        display: flex;
+        align-items: center;
+        margin-left: 2rem;
+      }
+
+      #header__inner_third {
+        display: flex;
+        align-items: center;
+        margin-right: 2rem;
+
+        .btn__add {
+          background: $primaryColor;
+          color: $whiteColor;
+          border-radius: 36px;
+          border: none;
+        }
+
+        #arrow_dropdown {
+          cursor: pointer;
+        }
+        #profile__holder {
+          width: 35px;
+          height: 35px;
+          border-radius: 50%;
+          // background: #483698;
+          background: rgba(72, 54, 152, 0.8);
+          display: flex;
+          justify-content: center;
+          margin-right: 0.6rem;
+
+          img {
+            max-width: 18px;
+          }
+        }
+      }
+    }
+  }
+  #icon__holder {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: $imageHolder;
+    display: flex;
+    justify-content: center;
+
+    img {
+      max-width: 1.2rem;
+    }
+  }
+
+  .sidebar__style {
+    width: 26.3%;
+    display: flex;
+    height: 100vh;
+    position: fixed;
+    background: $whiteColor;
+  }
+  .sidebar__style #mini__sidebar {
+    width: 80px;
+    background: $tertiaryLight;
+    height: inherit;
+    margin-top: 2px;
+
+    #mini__sidebar__section {
+      padding-top: 1rem;
+
+      .menu__holder {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2rem;
+        padding: 0.5rem;
+        cursor: pointer;
+
+        p {
+          color: $neutralDark;
+          opacity: 0.2;
+          font-size: 12px;
+          line-height: 16px;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .sidebar__style #max__sidebar {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 1.3rem 0.8rem;
+    border-right: 1px solid #e7e8e7;
+
+    .max__sidebar__header {
+      display: flex;
+      justify-content: space-between;
+
+      #max__sidebar__header__title {
+        color: $neutralDark;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 25px;
+        letter-spacing: 0.04em;
+      }
+      .btn__add {
+        border: 1px solid $primaryColor;
+        font-size: 12px;
+        color: $primaryColor;
+        border-radius: 50px;
+        padding: 0px 12px;
+        height: 24px;
+      }
+    }
+
+    .listChannels__container {
+      background: $whiteColor;
+      border-bottom: 1px solid #e7e8e7;
+      height: 84px;
+      padding: 22px 0px;
+      display: flex;
+      justify-content: space-between;
+      cursor: pointer;
+
+      #listChannels__info {
+        display: flex;
+        align-items: center;
+      }
+
+      .listChannels__info__text {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0.7rem;
+
+        .listChannels__info__title {
+          color: $neutralDark;
+          font-size: 14px;
+          font-weight: 500;
+        }
+
+        span {
+          color: $neutralLightBlack;
+          font-size: 12px;
+          line-height: 16px;
+        }
+      }
+      // right content
+      #listChannels__time span {
+        color: $neutralLightBlack;
+        font-size: 12px;
+        line-height: 16px;
+      }
+    }
+  }
+
+  .chatItem__me {
+    align-items: flex-end;
+  }
+  .chatItem__others {
+    align-items: flex-start;
+  }
+  .chatItem__container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.8rem;
+
+    .chatItem__inner {
+      display: flex;
+    }
+
+    .chatItem__card__container__me {
+      align-items: flex-end;
+    }
+    .chatItem__card__container__others {
+      align-items: flex-start;
+    }
+    .chatItem__card__container {
+      display: flex;
+      flex-direction: column;
+    }
+    .chatItem__card {
+      height: auto;
+      width: fit-content;
+      padding: 1.1rem;
+      margin-bottom: 0.4rem;
+      border-radius: 18px;
+    }
+
+    .chatItem__others {
+      background: rgba(37, 168, 224, 0.35);
+    }
+    .chatItem__me {
+      background: $chatForMe;
+    }
+    .me__first {
+      border-radius: 18px 0px 18px 18px !important;
+    }
+    .others__first {
+      border-radius: 0px 18px 18px 18px !important;
+    }
+  }
+}

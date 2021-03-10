@@ -1,0 +1,26 @@
+/* @font-face {
+  src: url("./assets/fonts/sourceSansPro/SourceSansPro-Regular.ttf");
+  font-family: "SourceSansPro";
+}
+
+@font-face {
+  src: url("./assets/fonts/KPMGFonts/KPMG_AppTT_151001_8403/KPMGAppTT151001/KPMGApp-Light\ 151001.ttf");
+  font-family: "KPMG App";
+} */
+
+@import "../node_modules/antd/dist/antd.min.css";
+
+body {
+  margin: 0;
+  /* font-family:"Sans "; */
+  overflow: hidden;
+  background: #f3f3f3;
+}
+
+p{
+  margin: 0px;
+}
+
+.blur__opacity {
+  opacity: 0.85;
+}
